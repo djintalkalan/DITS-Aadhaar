@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_24sdp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_30ssp"
+            android:layout_gravity="center"
+            android:fontFamily="@font/alice"
+            android:textColor="#fff"
+            android:text="DITS"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Aadhaar Data"
+            android:fontFamily="@font/alice"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alice"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:text="Submission"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_12ssp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <Button
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/btnUserLogin"
+                android:background="@drawable/button_solid_pink"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"
+                android:text="User  Login" />
+            <Button
+                android:layout_margin="@dimen/_5sdp"
+                android:id="@+id/btnAdminLogin"
+                android:layout_width="wrap_content"
+                android:textColor="#fff"
+                android:background="@drawable/button_outline_white"
+                android:layout_height="wrap_content"
+                android:text="Admin login" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/loginContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center" >
+    </FrameLayout>
+
+</LinearLayout>
+</ScrollView>

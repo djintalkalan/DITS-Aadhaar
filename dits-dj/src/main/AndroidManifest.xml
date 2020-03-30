@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dj.sangu.ditsaadhaar">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppThemeNoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity android:name="dj.sangu.ditsaadhaar.activity.OperatorListActivity"></activity>
+        <activity android:name="dj.sangu.ditsaadhaar.activity.AddOperatorActivity"></activity>
+        <activity android:name="dj.sangu.ditsaadhaar.activity.ReportWebViewActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.AddAdminActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.OperatorReportActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.UpdatePasswordActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.OperatorProfileActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.AdminProfileActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.AddAadhaarRecordActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.OperatorHomeActivity" />
+        <activity android:name="dj.sangu.ditsaadhaar.activity.AdminHomeActivity" />
+        <activity
+            android:name="dj.sangu.ditsaadhaar.activity.SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="dj.sangu.ditsaadhaar.activity.LoginActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

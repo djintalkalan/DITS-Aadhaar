@@ -1,0 +1,34 @@
+# Packages #
+############
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# bin folder #
+##########
+bin
+build
+dits-dj/release
+dits-dj/build
+# gen folder #
+##########
+gen
+.gradle
+.idea

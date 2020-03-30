@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <EditText
+        android:drawablePadding="@dimen/_10sdp"
+        android:drawableLeft="@drawable/ic_person_outline_black_24dp"
+        android:id="@+id/etPhone"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:theme="@style/EditTextThemesAdminLogin"
+        android:hint="Enter Your Phone"
+        android:maxLength="10"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:drawableLeft="@drawable/ic_lock_outline_black_24dp"
+        android:id="@+id/etPassword"
+        android:drawablePadding="@dimen/_10sdp"
+        android:layout_width="@dimen/_270sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:theme="@style/EditTextThemesAdminLogin"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"
+         />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:paddingTop="@dimen/_6sdp" >
+
+        <CheckBox
+            android:id="@+id/cbShowPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:buttonTint="@color/colorBlue"
+            android:text="Show Password"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:padding="@dimen/_5sdp"
+            android:text="Forgot Password"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_margin="@dimen/_2sdp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/button_solid_primary_button"
+        android:textColor="#fff"/>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@color/colorBlue"/>
+
+
+
+
+</LinearLayout>

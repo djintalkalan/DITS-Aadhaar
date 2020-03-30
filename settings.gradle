@@ -1,0 +1,2 @@
+include ':dits-dj'
+rootProject.name='DITS Aadhaar Data'
