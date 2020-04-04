@@ -2,11 +2,13 @@ package dj.sangu.ditsaadhaar.activity;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
@@ -24,7 +26,6 @@ public class AdminHomeActivity extends AppCompatActivity implements View.OnClick
     private CardView cardProfile;
     private CardView cardPassword;
     private CardView cardAddAdmin;
-    private LinearLayout llAddProfiles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,9 +49,8 @@ public class AdminHomeActivity extends AppCompatActivity implements View.OnClick
         cardProfile = findViewById(R.id.cardProfile);
         cardPassword = findViewById(R.id.cardPassword);
         cardAddAdmin = findViewById(R.id.cardAddAdmin);
-        llAddProfiles = findViewById(R.id.llAddProfiles);
         if (SharedPrefManager.getInstance(this).getAdmin().getAdminType().equals(Constants.STANDERED_ADMIN)) {
-            llAddProfiles.setVisibility(View.GONE);
+            findViewById(R.id.llAddProfiles).setVisibility(View.GONE);
         }
         setSupportActionBar((Toolbar) findViewById(R.id.toolbar));
     }

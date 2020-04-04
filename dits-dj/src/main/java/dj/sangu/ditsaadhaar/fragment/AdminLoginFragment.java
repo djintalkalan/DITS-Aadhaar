@@ -36,7 +36,6 @@ public class AdminLoginFragment extends Fragment implements View.OnClickListener
     private EditText etPhone;
     private EditText etPassword;
     private Button btnLogin;
-    private TextView tvForgotPassword;
     private CheckBox cbShowPassword;
     private String phone;
     private String password;
@@ -60,7 +59,6 @@ public class AdminLoginFragment extends Fragment implements View.OnClickListener
         etPhone = v.findViewById(R.id.etPhone);
         etPassword = v.findViewById(R.id.etPassword);
         btnLogin = v.findViewById(R.id.btnLogin);
-        tvForgotPassword = v.findViewById(R.id.tvForgotPassword);
         cbShowPassword = v.findViewById(R.id.cbShowPassword);
     }
 

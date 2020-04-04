@@ -1,14 +1,7 @@
 <resources>
 
-    <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
-    </style>
 
-    <style name="AppThemeNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -16,17 +9,8 @@
         <item name="android:windowSoftInputMode">stateHidden</item>
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
         <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:fontFamily">@font/alice</item>
         <item name="actionMenuTextColor">@color/colorPrimary</item>
-        <item name="android:orientation">vertical</item>
-    </style>
-
-    <style name="Theme.AppCompat.Light.DarkActionBar.Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!--This line changes the color of text in Toolbar-->
-        <item name="android:textColorPrimary">@color/white</item>
-        <!--This line changes the color of icons in toolbar (back, overflow menu icons)-->
-        <item name="android:textColorSecondary">@color/white</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="actionMenuTextColor">@color/black</item>
     </style>
 
     <style name="EditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -44,6 +28,7 @@
     <style name="EditTextThemesAdminLogin" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorControlActivated">@color/colorBlue</item>
     </style>
+
     <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <item name="android:windowBackground">@drawable/splash</item>
         <item name="android:windowTranslucentStatus">true</item>

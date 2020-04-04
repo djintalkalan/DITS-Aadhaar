@@ -4,8 +4,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?android:attr/actionBarSize"
-    android:background="@color/colorPrimaryDark"
-    android:foregroundTint="@color/white">
+    android:background="@color/colorPrimaryDark">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -29,13 +28,13 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_16ssp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/alice"
-                android:text="@string/copyright_text"
-                android:textColor="@color/white"
-                android:textSize="@dimen/_10ssp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:fontFamily="@font/alice"-->
+<!--                android:text="@string/copyright_text"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="@dimen/_10ssp" />-->
         </LinearLayout>
 
 

@@ -1,8 +1,5 @@
 <resources>
     <string name="app_name">DITS Aadhaar</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="copyright_text">\@copyright 2019 Jaglan Inc</string>
     <string name="default_title">DITS Aadhaar</string>
 </resources>

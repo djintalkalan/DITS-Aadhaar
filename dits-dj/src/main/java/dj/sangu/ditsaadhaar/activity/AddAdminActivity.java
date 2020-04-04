@@ -43,7 +43,7 @@ public class AddAdminActivity extends AppCompatActivity implements View.OnClickL
         progressBar = findViewById(R.id.progressBar);
         btnSubmit = findViewById(R.id.btnSubmit);
         btnSubmit.setOnClickListener(this);
-        Utils.setToolbar(this, (Toolbar) findViewById(R.id.toolbar), "Add Operator");
+        Utils.setToolbar(this, (Toolbar) findViewById(R.id.toolbar), "Add Admin");
     }
 
 

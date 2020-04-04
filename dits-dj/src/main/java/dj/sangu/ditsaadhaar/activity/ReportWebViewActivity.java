@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 
 import java.io.UnsupportedEncodingException;
+import java.util.Random;
 
 import dj.sangu.ditsaadhaar.R;
 import dj.sangu.ditsaadhaar.utils.Constants;
@@ -83,7 +84,7 @@ public class ReportWebViewActivity extends AppCompatActivity {
             return true;
         }
 
-        public CustomWebViewClient(ProgressBar progressBar) {
+        CustomWebViewClient(ProgressBar progressBar) {
             this.progressBar = progressBar;
             progressBar.setVisibility(View.VISIBLE);
         }
@@ -113,25 +114,28 @@ public class ReportWebViewActivity extends AppCompatActivity {
 
 
         public void createWebPagePrint (WebView webView){
-
             SharedPrefManager prefManager = SharedPrefManager.getInstance(this);
             String jobName="";
             if(prefManager.isLoggedIn()==Constants.ADMIN_LOGGED_IN_KEY){
-                jobName="ADMIN_PRINT_REPORT_ID";
+                jobName="DITS_REPORT_"+custId+"_"+ new Random().nextInt(1000);
             }else{
-                jobName=prefManager.getCustomer().getCustName()+" Report "+fromDate+"-"+toDate;
+                jobName=prefManager.getCustomer().getCustName()+" REPORT "+fromDate+"-"+toDate;
             }
             PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
             PrintDocumentAdapter printAdapter = webView.createPrintDocumentAdapter(jobName);
             PrintAttributes.Builder builder = new PrintAttributes.Builder();
             builder.setMediaSize(PrintAttributes.MediaSize.NA_LETTER.asLandscape());
-            PrintJob printJob = printManager.print(jobName, printAdapter, builder.build());
-            if (printJob.isCompleted()) {
-                Toast.makeText(getApplicationContext(), "Print Complete", Toast.LENGTH_LONG).show();
-            } else if (printJob.isFailed()) {
-                Toast.makeText(getApplicationContext(), "Print Failed", Toast.LENGTH_LONG).show();
+            PrintJob printJob = null;
+            if (printManager != null) {
+                printJob = printManager.print(jobName, printAdapter, builder.build());
             }
-            // Save the job object for later status checking
+            if (printJob != null) {
+                if (printJob.isCompleted()) {
+                    Toast.makeText(getApplicationContext(), "Print Complete", Toast.LENGTH_LONG).show();
+                } else if (printJob.isFailed()) {
+                    Toast.makeText(getApplicationContext(), "Print Failed", Toast.LENGTH_LONG).show();
+                }
+            }
         }
 
 }
