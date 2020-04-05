@@ -45,7 +45,7 @@ public class UpdatePasswordActivity extends AppCompatActivity implements View.On
         btnSubmit = findViewById(R.id.btnSubmit);
         progressBar = findViewById(R.id.progressBar);
         btnSubmit.setOnClickListener(this);
-        Utils.setToolbar(this, (Toolbar) findViewById(R.id.toolbar), "Operator Profile");
+        Utils.setToolbar(this, (Toolbar) findViewById(R.id.toolbar), "Update Password");
     }
 
     @Override
